@@ -1,0 +1,388 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>EventSphere</title>
+  <link rel="stylesheet" href="test.css" />
+  
+</head>
+<body>
+  <header>
+    <div class="top-nav">
+      <div class="nav-left">
+        <div class="dropdown">
+          <a href="#" class="dropdown-trigger">Browse Events</a>
+          <div class="dropdown-content">
+            <div class="dropdown-category">
+              <h4>Corporate & Professional</h4>
+              <a href="#">Conferences</a>
+              <a href="#">Webinars</a>
+              <a href="#">Seminars</a>
+              <a href="#">Product Launches</a>
+            </div>
+            <div class="dropdown-category">
+              <h4>Educational Events</h4>
+              <a href="#">Coding Bootcamps</a>
+              <a href="#">Online Courses</a>
+              <a href="#">School/College Fests</a>
+              <a href="#">Academic Competitions</a>
+            </div>
+            <div class="dropdown-category">
+              <h4>Entertainment & Lifestyle</h4>
+              <a href="#">Concerts</a>
+              <a href="#">Comedy Shows</a>
+              <a href="#">Art Exhibitions</a>
+              <a href="#">Fashion Shows</a>
+            </div>
+            <div class="dropdown-category">
+              <h4>Tech & Gaming</h4>
+              <a href="#">Hackathons</a>
+              <a href="#">Tech Talks</a>
+              <a href="#">Game Tournaments</a>
+              <a href="#">App Demos</a>
+            </div>
+          </div>
+        </div>
+        <a href="about.html">About</a>
+        <a href="browse.html">Explore</a>
+      </div>
+      <div class="logo">
+  <img src="Screenshot_2025-06-06_115142-removebg-preview.png" alt="EventSphere Logo" class="logo-image">
+  <div class="logo-text">
+    EventSphere<br>
+    <!-- <span class="logo-subtitle">Your Event Planner</span> -->
+  </div>
+</div>
+      <div class="nav-right">
+        <!-- <a href="#" class="btn-reserve">Login</a> -->
+        <!-- <a href="#" class="btn-reserve">Sign Up</a> -->
+         <a href="#" class="btn-reserve login-btn">Login</a>
+      </div>
+      <div class="mobile-menu-icon" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+ <main class="main-hero" id="hero-section">
+  <div class="hero-video-overlay">
+    <video class="hero-video-bg" src="./vid.mp4" autoplay muted loop playsinline></video>
+    <div class="hero-overlay-content">
+      <h1 class="hero-animated-title">
+        <!-- <span class="hero-line">YOUR </span>
+         <span class="hero-line">OWN</span><br> -->
+          <span class="hero-line"> EVENT</span><br>
+        <span class="hero-line">BOOKING</span><br>
+        <span class="hero-line">SPACE</span>
+      </h1>
+      <hr>
+      <p class="hero-animated-p">
+Discover and book the best events tailored to your interests and location.
+
+<br>
+Make every occasion memorable—your next great experience is just a click away!
+
+
+      </p>
+      <!-- <a href="#categories" class="btn-explore hero-animated-btn">GET STARTED</a> -->
+    </div>
+  </div>
+</main>
+
+  <section class="carousel-section">
+    <button class="carousel-btn left" id="carousel-prev">&#8592;</button>
+    <div class="carousel-content">
+      <div class="carousel-track" id="carousel-track">
+        <!-- Slides will be injected here by JS -->
+      </div>
+    </div>
+    <button class="carousel-btn right" id="carousel-next">&#8594;</button>
+  </section>
+
+  <!-- Event Showcase Section -->
+  <section id="categories" class="showcase-section">
+    <div class="showcase-header">
+      <h2>Have a Look at Some Conducted Events</h2>
+      <p>Experience the magic of our past events through this visual gallery</p>
+    </div>
+    <div class="showcase-grid">
+      <div class="showcase-card scroll-reveal" data-delay="100">
+        <div class="showcase-image">
+          <img src="https://images.unsplash.com/photo-1577962917302-cd874c4e31d2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y29ycG9yYXRlfGVufDB8fDB8fHww" alt="Corporate Event">
+          <div class="image-overlay">
+            
+          </div>
+        </div>
+        <div class="card-info">
+          <h3>Corporate & Professional</h3>
+          <p>Conferences, webinars, seminars, and networking events</p>
+          <!-- <span class="event-stats">1,200+ Events Conducted</span> -->
+        </div>
+      </div>
+
+      <div class="showcase-card scroll-reveal" data-delay="200">
+        <div class="showcase-image">
+          <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZWR1Y2F0aW9ufGVufDB8fDB8fHww" alt="Educational Event">
+          <div class="image-overlay">
+            
+          </div>
+        </div>
+        <div class="card-info">
+          <h3>Educational Events</h3>
+          <p>Bootcamps, courses, competitions, and workshops</p>
+          <!-- <span class="event-stats">800+ Events Conducted</span> -->
+        </div>
+      </div>
+
+      <div class="showcase-card scroll-reveal" data-delay="300">
+        <div class="showcase-image">
+          <img src="https://images.unsplash.com/photo-1605289355680-75fb41239154?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFzaGlvbiUyMHNob3d8ZW58MHx8MHx8fDA%3D" alt="Entertainment Event">
+          <div class="image-overlay">
+            
+          </div>
+        </div>
+        <div class="card-info">
+          <h3>Entertainment & Lifestyle</h3>
+          <p>Concerts, comedy shows, art exhibitions</p>
+          <!-- <span class="event-stats">2,500+ Events Conducted</span> -->
+        </div>
+      </div>
+
+      <div class="showcase-card scroll-reveal" data-delay="400">
+        <div class="showcase-image">
+          <img src="https://images.unsplash.com/photo-1636488363148-818c08eec89e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Z2FtaW5nJTIwaGFja2F0aG9uc3xlbnwwfHwwfHx8MA%3D%3D" alt="Tech Event">
+          <div class="image-overlay">
+            
+          </div>
+        </div>
+        <div class="card-info">
+          <h3>Tech & Gaming</h3>
+          <p>Hackathons, tech talks, gaming tournaments</p>
+          <!-- <span class="event-stats">600+ Events Conducted</span> -->
+        </div>
+      </div>
+
+      <div class="showcase-card scroll-reveal" data-delay="500">
+        <div class="showcase-image">
+          <img src="https://images.unsplash.com/photo-1655734940578-a8efe14cabc9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGFydHMlMjBhbmQlMjBjdWx0dXJhbHN8ZW58MHx8MHx8fDA%3D" alt="Cultural Event">
+          <div class="image-overlay">
+            
+          </div>
+        </div>
+        <div class="card-info">
+          <h3> Arts & Culturals </h3>
+          <p>Local fairs, food festivals, cultural celebrations</p>
+          <!-- <span class="event-stats">950+ Events Conducted</span> -->
+        </div>
+      </div>
+
+      <div class="showcase-card scroll-reveal" data-delay="600">
+        <div class="showcase-image">
+          <img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bXVzaWN8ZW58MHx8MHx8fDA%3D" alt="Wedding Event">
+          <div class="image-overlay">
+            
+          </div>
+        </div>
+        <div class="card-info">
+          <h3>Music</h3>
+          <p>Weddings, birthday parties, anniversaries</p>
+          <!-- <span class="event-stats">1,800+ Events Conducted</span> -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Testimonials Section -->
+  <section class="testimonials-section">
+    <h2>What Our Users Say</h2>
+    <div class="testimonials-carousel">
+      <div class="testimonial-track" id="testimonial-track">
+        <div class="testimonial-slide">
+          <div class="testimonial-content">
+            <p>"EventSphere made organizing our conference incredibly easy. The platform is intuitive and the support team is amazing!"</p>
+            <div class="testimonial-author">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Johnson">
+              <div>
+                <h4>Sarah Johnson</h4>
+                <span>Event Coordinator</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-slide">
+          <div class="testimonial-content">
+            <p>"I've discovered so many amazing events through EventSphere. It's my go-to platform for finding local activities."</p>
+            <div class="testimonial-author">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Chen">
+              <div>
+                <h4>Michael Chen</h4>
+                <span>Event Enthusiast</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-slide">
+          <div class="testimonial-content">
+            <p>"The analytics and attendee management features helped us triple our event attendance this year!"</p>
+            <div class="testimonial-author">
+              <img src="https://randomuser.me/api/portraits/women/25.jpg" alt="Emily Rodriguez">
+              <div>
+                <h4>Emily Rodriguez</h4>
+                <span>Marketing Director</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-nav">
+      <button class="testimonial-btn" id="testimonial-prev">❮</button>
+      <button class="testimonial-btn" id="testimonial-next">❯</button>
+    </div>
+  </section>
+
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="contact-content">
+      <div class="contact-info">
+        <h2>Give your feedback</h2>
+        <p>Ready to create your next amazing event? Give your valuable feedback so we can provide with the best.</p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <strong>Email:</strong>
+            <span>hello@eventsphere.com</span>
+          </div>
+          <div class="contact-item">
+            <strong>Phone:</strong>
+            <span>+1 (555) 123-4567</span>
+          </div>
+          <div class="contact-item">
+            <strong>Address:</strong>
+            <span>123 Event Street, City, State 12345</span>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <form id="contact-form">
+          <div class="form-group">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+          </div>
+          <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+          </div>
+          <div class="form-group">
+            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <!-- Place this inside your .footer-content or .footer-brand -->
+   <div class="footer-logo-row">
+    <img src="Screenshot_2025-06-06_115142-removebg-preview.png" alt="EventSphere Logo" class="footer-logo-img">
+  <div class="footer-logo-text">
+    EVENTSPHERE
+    
+  </div>
+</div>
+      <nav class="footer-nav">
+        <a href="#hero-section">Home</a>
+       <a href="#" id="footer-signup-link">Login</a>
+        <a href="browse.html">Explore</a>
+        <a href="about.html">About</a>
+      </nav>
+      <p class="footer-copy">&copy; 2024 EventSphere. All rights reserved.</p>
+    </div>
+  </footer>
+
+ <!-- Blur overlay -->
+<div class="blur-bg-overlay"></div>
+
+<!-- Login/Signup Popup -->
+<div class="login-popup" id="auth-popup">
+  <div class="login-box">
+    <button class="close-btn" type="button">&times;</button>
+    <div class="side-img">
+      <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGV2ZW50fGVufDB8fDB8fHww" />
+    </div>
+    <div class="form-area">
+      <form class="login-form">
+        <h2>Login</h2>
+        <div class="input-box">
+          <input type="text" required>
+          <label>Name</label>
+        </div>
+        <div class="input-box">
+          <input type="email" required>
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <input type="password" required>
+          <label>Password</label>
+        </div>
+        <button type="submit">Log In</button>
+        <div class="register-link">
+          <p>Don't have an account? <a href="#" id="show-signup">Signup</a></p>
+        </div>
+      </form>
+      <form class="signup-form" style="display:none;">
+        <h2>Sign Up</h2>
+        <div class="input-box">
+          <input type="text" required>
+          <label>Name</label>
+        </div>
+        <div class="input-box">
+          <input type="email" required>
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <input type="password" required>
+          <label>Password</label>
+        </div>
+        <div class="input-box">
+          <input type="password" required>
+          <label>Confirm Password</label>
+        </div>
+        <div class="input-box">
+          <input type="number" min="1" required>
+          <label>Age</label>
+        </div>
+        <div class="remember-forgot" style="margin-bottom:15px;">
+          <label><input type="checkbox" required> I agree to Terms & Conditions</label>
+        </div>
+        <button type="submit">Sign Up</button>
+        <div class="register-link">
+          <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+document.getElementById('footer-signup-link').onclick = function(e) {
+  e.preventDefault();
+  // Show popup and overlay
+  document.querySelector('.login-popup').classList.add('active');
+  document.querySelector('.blur-bg-overlay').style.display = 'block';
+  document.body.style.overflow = 'hidden';
+  // Show signup form, hide login form
+  document.querySelector('.signup-form').style.display = 'block';
+  document.querySelector('.login-form').style.display = 'none';
+};
+</script>
+
+  <script src="practice.js"></script>
+</body>
+</html>
