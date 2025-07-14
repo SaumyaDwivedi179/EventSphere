@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login | EventSphere</title>
+  <link rel="stylesheet" href="signup.css" />
+  <style>
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0,0,0,0.45);
+      z-index: 0;
+      pointer-events: none;
+    }
+    body {
+      position: relative;
+      min-height: 100vh;
+      width: 100vw;
+      overflow-x: hidden;
+    }
+    .center-container {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="center-container">
+    <div class="form-popup show-login" id="auth-box">
+      <div class="form-box login">
+        <div class="form-details">
+          <h2>Welcome Back</h2>
+          <p>Please log in using your personal information to stay connected with us.</p>
+        </div>
+        <div class="form-content">
+          <h2>LOGIN</h2>
+          <form action="#">
+            <div class="input-field">
+              <input type="text" required>
+              <label>Name</label>
+            </div>
+            <div class="input-field">
+              <input type="password" required>
+              <label>Password</label>
+            </div>
+            <div class="input-field">
+              <input type="number" min="1" required>
+              <label>Age</label>
+            </div>
+            <button type="submit">Log In</button>
+          </form>
+          <div class="bottom-link">
+            Don't have an account?
+            <a href="#" id="show-signup">Signup</a>
+          </div>
+        </div>
+      </div>
+      <div class="form-box signup">
+        <div class="form-details">
+          <h2>Create Account</h2>
+          <p>To become a part of our community, please sign up using your personal information.</p>
+        </div>
+        <div class="form-content">
+          <h2>SIGNUP</h2>
+          <form action="#">
+            <div class="input-field">
+              <input type="text" required>
+              <label>Name</label>
+            </div>
+            <div class="input-field">
+              <input type="email" required>
+              <label>Email</label>
+            </div>
+            <div class="input-field">
+              <input type="password" required>
+              <label>Password</label>
+            </div>
+            <div class="input-field">
+              <input type="password" required>
+              <label>Confirm Password</label>
+            </div>
+            <div class="input-field">
+              <input type="text" required>
+              <label>Address</label>
+            </div>
+            <div class="input-field" style="display: flex; align-items: center; gap: 10px;">
+              <label style="position:static;transform:none;color:#4a4646;font-size:0.95rem;">Gender:</label>
+              <input type="radio" name="gender" value="male" id="male" required>
+              <label for="male" style="position:static;transform:none;color:#4a4646;font-size:0.95rem;">Male</label>
+              <input type="radio" name="gender" value="female" id="female" required>
+              <label for="female" style="position:static;transform:none;color:#4a4646;font-size:0.95rem;">Female</label>
+            </div>
+            <div class="input-field">
+              <input type="number" min="1" required>
+              <label>Age</label>
+            </div>
+            <div class="policy-text">
+              <input type="checkbox" id="policy" required>
+              <label for="policy">
+                I agree the
+                <a href="#" class="option">Terms & Conditions</a>
+              </label>
+            </div>
+            <button type="submit">Sign Up</button>
+          </form>
+          <div class="bottom-link">
+            Already have an account?
+            <a href="#" id="show-login">Login</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="signup.js"></script>
+</body>
+</html>

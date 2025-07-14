@@ -1,0 +1,164 @@
+/* Blur overlay */
+.blur-bg-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(40, 20, 20, 0.25);
+  z-index: 1000;
+  display: none;
+  backdrop-filter: blur(6px);
+}
+
+/* Popup */
+.login-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 1001;
+  display: none;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 600px;
+  min-width: 320px;
+  background: transparent;
+  border-radius: 15px;
+  box-shadow: 0 8px 32px 0 rgba(31,38,135,0.18);
+}
+.login-popup.active { display: flex; }
+
+.login-box {
+  display: flex;
+  width: 100%;
+  background: rgba(255,255,255,0.08);
+  border-radius: 15px;
+  border: 2px solid gray;
+  backdrop-filter: blur(10px);
+  position: relative;
+  overflow: hidden;
+}
+.side-img {
+  flex: 1 1 40%;
+  background: #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 140px;
+  max-width: 220px;
+  padding: 0;
+}
+.side-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0 0 0 15px;
+}
+.form-area {
+  flex: 2 1 60%;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: transparent;
+}
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 18px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* Your .login-box and input styles from your prompt */
+.login-box h2{
+    text-align: center;
+    color: white;
+    font-size: 2em;
+}
+.input-box{
+    width: 100%;
+    margin: 30px 0 0 0;
+    position: relative;
+    border-bottom: 1px solid #fff;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: .5s;
+}
+.input-box input:focus ~ label,
+.input-box input:valid ~ label{
+    top: -5px;
+}
+.input-box input{
+    width: 100%;
+    padding: 5px;
+    height: 40px;
+    font-size: 1em;
+    color: #fff;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    color: #fff;
+    transform: translate(-50%);
+}
+.remember-forgot {
+  margin:15px 0 15px;
+  font-size:.9em;
+  color:#fff;
+  display:flex;
+  justify-content:space-between;
+}
+.remember-forgot label input{
+    margin-right: 3px;
+}
+.remember-forgot a{
+    color: #fff;
+    text-decoration: none;
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+button[type="submit"]{
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #000;
+    font-weight: 500;
+    margin-top: 20px;
+}
+.register-link{
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.register-link p a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.register-link p a:hover{
+    text-decoration: underline;
+}
+@media (max-width: 700px) {
+  .login-box { flex-direction: column; }
+  .side-img { max-width: 100%; min-width: 100px; }
+  .form-area { padding: 18px 10px; }
+}

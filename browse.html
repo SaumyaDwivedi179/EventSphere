@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Browse Events - EventSphere</title>
+  <link rel="stylesheet" href="test.css" />
+  <link rel="stylesheet" href="browse.css" />
+</head>
+<body>
+  <header>
+    <div class="top-nav">
+      <div class="nav-left">
+        <div class="dropdown">
+          <a href="#" class="dropdown-trigger">Browse Events</a>
+          <div class="dropdown-content">
+            <div class="dropdown-category">
+              <h4>Corporate & Professional</h4>
+              <a href="#">Conferences</a>
+              <a href="#">Webinars</a>
+              <a href="#">Seminars</a>
+              <a href="#">Product Launches</a>
+            </div>
+            <div class="dropdown-category">
+              <h4>Educational Events</h4>
+              <a href="#">Coding Bootcamps</a>
+              <a href="#">Online Courses</a>
+              <a href="#">School/College Fests</a>
+              <a href="#">Academic Competitions</a>
+            </div>
+            <div class="dropdown-category">
+              <h4>Entertainment & Lifestyle</h4>
+              <a href="#">Concerts</a>
+              <a href="#">Comedy Shows</a>
+              <a href="#">Art Exhibitions</a>
+              <a href="#">Fashion Shows</a>
+            </div>
+            <div class="dropdown-category">
+              <h4>Tech & Gaming</h4>
+              <a href="#">Hackathons</a>
+              <a href="#">Tech Talks</a>
+              <a href="#">Game Tournaments</a>
+              <a href="#">App Demos</a>
+            </div>
+          </div>
+        </div>
+         <a href="test.html">Home</a>
+        <a href="about.html">About</a>
+       
+      </div>
+      <div class="logo">
+  <img src="Screenshot_2025-06-06_115142-removebg-preview.png" alt="EventSphere Logo" class="logo-image">
+  <div class="logo-text">
+    EventSphere<br>
+    <!-- <span class="logo-subtitle">Your Event Planner</span> -->
+  </div>
+</div>
+      <div class="nav-right">
+        <!-- <a href="#" class="btn-reserve">Login</a> -->
+        <!-- <a href="#" class="btn-reserve">Sign Up</a> -->
+         <!-- <a href="#" class="btn-reserve login-btn">Login</a> -->
+      </div>
+      <div class="mobile-menu-icon" id="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="browse-hero">
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span class="word-animate">Discover</span>
+        <span class="word-animate">Amazing</span>
+        <span class="word-animate">Events</span>
+      </h1>
+      <p class="hero-subtitle">Find and book the perfect event for your interests</p>
+    </div>
+    <div class="floating-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+  </section>
+
+  <!-- Filter Section -->
+  <section class="filter-section">
+    <div class="container">
+      <div class="filter-controls">
+        <button class="filter-btn active" data-category="all">All Events</button>
+        <button class="filter-btn" data-category="technology">Technology</button>
+        <button class="filter-btn" data-category="business">Business</button>
+        <button class="filter-btn" data-category="arts">Arts & Culture</button>
+        <button class="filter-btn" data-category="sports">Sports</button>
+        <button class="filter-btn" data-category="music">Music</button>
+        <button class="filter-btn" data-category="education">Education</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Events Section -->
+  <section class="events-section">
+    <div class="container">
+
+      <!-- Technology Events -->
+      <div class="category-section" data-category="technology">
+        <h2 class="category-title">
+          <span class="title-icon">💻</span>
+          <span class="title-text">Technology Events</span>
+        </h2>
+        <div class="events-grid">
+          <!-- Card 1 -->
+          <div class="event-card" data-category="technology">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2FtaW5nfGVufDB8fDB8fHww" alt="Tech Conference" />
+              <div class="card-overlay">
+                <div class="event-date">Dec 15, 2024</div>
+              </div>
+            </div>
+            <div class="card-content">
+              <!-- <div class="event-category">Technology</div> -->
+              <h3 class="event-title">AI & Machine Learning Summit</h3>
+              <p class="event-description">Join industry experts to explore the latest in AI technology and machine learning innovations.</p>
+              <div class="event-details">
+                <div class="detail-item"><span class="detail-icon">📍</span><span>San Francisco, CA</span></div>
+                <div class="detail-item"><span class="detail-icon">👥</span><span>250 attendees</span></div>
+                <div class="detail-item"><span class="detail-icon">💰</span><span>$299</span></div>
+              </div>
+              <button class="book-btn" onclick="bookEvent('AI & Machine Learning Summit', '$299')">
+                <span class="btn-text">Book Now</span>
+                <div class="btn-particles"></div>
+              </button>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="event-card" data-category="technology">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHRlY2h8ZW58MHx8MHx8fDA%3D" alt="Web Dev Workshop" />
+              <div class="card-overlay">
+                <div class="event-date">Dec 20, 2024</div>
+              </div>
+            </div>
+            <div class="card-content">
+              <!-- <div class="event-category">Technology</div> -->
+              <h3 class="event-title">Modern Web Development Workshop</h3>
+              <p class="event-description">Learn the latest web technologies including React, TypeScript, and modern deployment strategies.</p>
+              <div class="event-details">
+                <div class="detail-item"><span class="detail-icon">📍</span><span>New York, NY</span></div>
+                <div class="detail-item"><span class="detail-icon">👥</span><span>150 attendees</span></div>
+                <div class="detail-item"><span class="detail-icon">💰</span><span>$199</span></div>
+              </div>
+              <button class="book-btn" onclick="bookEvent('Modern Web Development Workshop', '$199')">
+                <span class="btn-text">Book Now</span>
+                <div class="btn-particles"></div>
+              </button>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="event-card" data-category="technology">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1601153211050-ae2e1fa428d7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fHRlY2glMjBhbmQlMjBnYW1pbmd8ZW58MHx8MHx8fDA%3D" alt="Cloud Expo" />
+              <div class="card-overlay">
+                <div class="event-date">Jan 5, 2025</div>
+              </div>
+            </div>
+            <div class="card-content">
+              <!-- <div class="event-category">Technology</div> -->
+              <h3 class="event-title">Cloud Computing Expo and webinar</h3>
+              <p class="event-description">Dive into the world of cloud computing with hands-on sessions, webinar and expert talks.</p>
+              <div class="event-details">
+                <div class="detail-item"><span class="detail-icon">📍</span><span>Seattle, WA</span></div>
+                <div class="detail-item"><span class="detail-icon">👥</span><span>400 attendees</span></div>
+                <div class="detail-item"><span class="detail-icon">💰</span><span>$249</span></div>
+              </div>
+              <button class="book-btn" onclick="bookEvent('Cloud Computing Expo', '$249')">
+                <span class="btn-text">Book Now</span>
+                <div class="btn-particles"></div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Business Events -->
+      <div class="category-section" data-category="business">
+        <h2 class="category-title">
+          <span class="title-icon">💼</span>
+          <span class="title-text">Business Events</span>
+        </h2>
+        <div class="events-grid">
+          <!-- Card 1 -->
+          <div class="event-card" data-category="business">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1687254351575-177c98459ff9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHByb2Zlc3Npb25hbCUyMGV2ZW50fGVufDB8fDB8fHww" alt="Leadership Summit" />
+              <div class="card-overlay">
+                <div class="event-date">Jan 10, 2025</div>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="event-category">Business</div>
+              <h3 class="event-title">Leadership Excellence Summit</h3>
+              <p class="event-description">Transform your leadership skills with insights from top executives and industry leaders.</p>
+              <div class="event-details">
+                <div class="detail-item"><span class="detail-icon">📍</span><span>Chicago, IL</span></div>
+                <div class="detail-item"><span class="detail-icon">👥</span><span>300 attendees</span></div>
+                <div class="detail-item"><span class="detail-icon">💰</span><span>$399</span></div>
+              </div>
+              <button class="book-btn" onclick="bookEvent('Leadership Excellence Summit', '$399')">
+                <span class="btn-text">Book Now</span>
+                <div class="btn-particles"></div>
+              </button>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="event-card" data-category="business">
+            <div class="card-image">
+              <img src="https://plus.unsplash.com/premium_photo-1683133974170-762dc561d292?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fGJ1c2luZXNzfGVufDB8fDB8fHww" alt="Startup Pitch" />
+              <div class="card-overlay">
+                <div class="event-date">Jan 15, 2025</div>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="event-category">Business</div>
+              <h3 class="event-title">Startup Pitch Competition</h3>
+              <p class="event-description">Watch innovative startups pitch their ideas to investors and industry experts get to know more tips and tricks for your next move.</p>
+              <div class="event-details">
+                <div class="detail-item"><span class="detail-icon">📍</span><span>Austin, TX</span></div>
+                <div class="detail-item"><span class="detail-icon">👥</span><span>200 attendees</span></div>
+                <div class="detail-item"><span class="detail-icon">💰</span><span>$149</span></div>
+              </div>
+              <button class="book-btn" onclick="bookEvent('Startup Pitch Competition', '$149')">
+                <span class="btn-text">Book Now</span>
+                <div class="btn-particles"></div>
+              </button>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="event-card" data-category="business">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTh8fGJ1c2luZXNzfGVufDB8fDB8fHww" alt="Business Networking" />
+              <div class="card-overlay">
+                <div class="event-date">Feb 2, 2025</div>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="event-category">Business</div>
+              <h3 class="event-title">Business Networking Gala and Expert Talk</h3>
+              <p class="event-description">Connect with professionals and entrepreneurs at the region's largest networking event.</p>
+              <div class="event-details">
+                <div class="detail-item"><span class="detail-icon">📍</span><span>Dallas, TX</span></div>
+                <div class="detail-item"><span class="detail-icon">👥</span><span>350 attendees</span></div>
+                <div class="detail-item"><span class="detail-icon">💰</span><span>$199</span></div>
+              </div>
+              <button class="book-btn" onclick="bookEvent('Business Networking Gala', '$199')">
+                <span class="btn-text">Book Now</span>
+                <div class="btn-particles"></div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Arts & Culture Events -->
+      <div class="category-section" data-category="arts">
+        <h2 class="category-title">
+          <span class="title-icon">🎨</span>
+          <span class="title-text">Arts & Culture Events</span>
+        </h2>
+        <div class="events-grid">
+          <!-- Card 1 -->
+          <div class="event-card" data-category="arts">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1593073862407-a3ce22748763?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YXJ0c3xlbnwwfHwwfHx8MA%3D%3D" alt="Art Exhibition" />
+              <div class="card-overlay">
+                <div class="event-date">Feb 5, 2025</div>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="event-category">Arts & Culture</div>
+              <h3 class="event-title">Contemporary Art Exhibition</h3>
+              <p class="event-description">Explore  contemporary art from emerging and established artists worldwide.</p>
+              <div class="event-details">
+                <div class="detail-item"><span class="detail-icon">📍</span><span>Los Angeles, CA</span></div>
+                <div class="detail-item"><span class="detail-icon">👥</span><span>500 attendees</span></div>
+                <div class="detail-item"><span class="detail-icon">💰</span><span>$75</span></div>
+              </div>
+              <button class="book-btn" onclick="bookEvent('Contemporary Art Exhibition', '$75')">
+                <span class="btn-text">Book Now</span>
+                <div class="btn-particles"></div>
+              </button>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="event-card" data-category="arts">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1720945489924-19b707539b3a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y3VsdHVyYWxzfGVufDB8fDB8fHww" alt="Theater Night" />
+              <div class="card-overlay">
+                <div class="event-date">Feb 12, 2025</div>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="event-category">Arts & Culture</div>
+              <h3 class="event-title">Theater Night: Classic Drama</h3>
+              <p class="event-description">Experience a night of classic drama performed by renowned theater artists.</p>
+              <div class="event-details">
+                <div class="detail-item"><span class="detail-icon">📍</span><span>New York, NY</span></div>
+                <div class="detail-item"><span class="detail-icon">👥</span><span>300 attendees</span></div>
+                <div class="detail-item"><span class="detail-icon">💰</span><span>$60</span></div>
+              </div>
+              <button class="book-btn" onclick="bookEvent('Theater Night: Classic Drama', '$60')">
+                <span class="btn-text">Book Now</span>
+                <div class="btn-particles"></div>
+              </button>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="event-card" data-category="arts">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXJ0c3xlbnwwfHwwfHx8MA%3D%3D" alt="Cultural Fest" />
+              <div class="card-overlay">
+                <div class="event-date">Feb 20, 2025</div>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="event-category">Arts & Culture</div>
+              <h3 class="event-title">International Cultural Fest</h3>
+              <p class="event-description">Celebrate diversity with music, dance, and food from around the world.</p>
+              <div class="event-details">
+                <div class="detail-item"><span class="detail-icon">📍</span><span>Miami, FL</span></div>
+                <div class="detail-item"><span class="detail-icon">👥</span><span>800 attendees</span></div>
+                <div class="detail-item"><span class="detail-icon">💰</span><span>$40</span></div>
+              </div>
+              <button class="book-btn" onclick="bookEvent('International Cultural Fest', '$40')">
+                <span class="btn-text">Book Now</span>
+                <div class="btn-particles"></div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sports Events -->
+      <div class="category-section" data-category="sports">
+        <h2 class="category-title">
+          <span class="title-icon">⚽</span>
+          <span class="title-text">Sports Events</span>
+        </h2>
+        <div class="events-grid">
+          <!-- Card 1 -->
+          <div class="event-card" data-category="sports">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fHNwb3J0c3xlbnwwfHwwfHx8MA%3D%3D" alt="Marathon" />
+              <div class="card-overlay">
+                <div class="event-date">Mar 12, 2025</div>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="event-category">Sports</div>
+              <h3 class="event-title">City Marathon Championship</h3>
+              <p class="event-description">Join thousands of runners in this exciting marathon through the heart of the city.</p>
+              <div class="event-details">
+                <div class="detail-item"><span class="detail-icon">📍</span><span>Boston, MA</span></div>
+                <div class="detail-item"><span class="detail-icon">👥</span><span>5000 attendees</span></div>
+                <div class="detail-item"><span class="detail-icon">💰</span><span>$125</span></div>
+              </div>
+              <button class="book-btn" onclick="bookEvent('City Marathon Championship', '$125')">
+                <span class="btn-text">Book Now</span>
+                <div class="btn-particles"></div>
+              </button>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="event-card" data-category="sports">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1566932769119-7a1fb6d7ce23?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c3BvcnRzfGVufDB8fDB8fHww" alt="Basketball Tournament" />
+              <div class="card-overlay">
+                <div class="event-date">Mar 20, 2025</div>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="event-category">Sports</div>
+              <h3 class="event-title">National Basketball Tournament</h3>
+              <p class="event-description">Watch top teams compete for the national title in an action-packed tournament.</p>
+              <div class="event-details">
+                <div class="detail-item"><span class="detail-icon">📍</span><span>Houston, TX</span></div>
+                <div class="detail-item"><span class="detail-icon">👥</span><span>7000 attendees</span></div>
+                <div class="detail-item"><span class="detail-icon">💰</span><span>$90</span></div>
+              </div>
+              <button class="book-btn" onclick="bookEvent('National Basketball Tournament', '$90')">
+                <span class="btn-text">Book Now</span>
+                <div class="btn-particles"></div>
+              </button>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="event-card" data-category="sports">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8c3BvcnRzfGVufDB8fDB8fHww" alt="Soccer Finals" />
+              <div class="card-overlay">
+                <div class="event-date">Mar 28, 2025</div>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="event-category">Sports</div>
+              <h3 class="event-title">Soccer League Final tournament</h3>
+              <p class="event-description">Cheer for your favorite teams in the thrilling soccer league finals.</p>
+              <div class="event-details">
+                <div class="detail-item"><span class="detail-icon">📍</span><span>Orlando, FL</span></div>
+                <div class="detail-item"><span class="detail-icon">👥</span><span>6000 attendees</span></div>
+                <div class="detail-item"><span class="detail-icon">💰</span><span>$110</span></div>
+              </div>
+              <button class="book-btn" onclick="bookEvent('Soccer League Finals', '$110')">
+                <span class="btn-text">Book Now</span>
+                <div class="btn-particles"></div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Music Events -->
+      <div class="category-section" data-category="music">
+        <h2 class="category-title">
+          <span class="title-icon">🎵</span>
+          <span class="title-text">Music Events</span>
+        </h2>
+        <div class="events-grid">
+          <!-- Card 1 -->
+          <div class="event-card" data-category="music">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1470229538611-16ba8c7ffbd7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bXVzaWMlMjBldmVudHxlbnwwfHwwfHx8MA%3D%3D" alt="Jazz Night" />
+              <div class="card-overlay">
+                <div class="event-date">Apr 5, 2025</div>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="event-category">Music</div>
+              <h3 class="event-title">Jazz Night Live</h3>
+              <p class="event-description">Enjoy an evening of smooth jazz with top musicians from around the world.</p>
+              <div class="event-details">
+                <div class="detail-item"><span class="detail-icon">📍</span><span>New Orleans, LA</span></div>
+                <div class="detail-item"><span class="detail-icon">👥</span><span>800 attendees</span></div>
+                <div class="detail-item"><span class="detail-icon">💰</span><span>$60</span></div>
+              </div>
+              <button class="book-btn" onclick="bookEvent('Jazz Night Live', '$60')">
+                <span class="btn-text">Book Now</span>
+                <div class="btn-particles"></div>
+              </button>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="event-card" data-category="music">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1670028514318-0ac718c0590d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bXVzaWMlMjBldmVudHxlbnwwfHwwfHx8MA%3D%3D" alt="Rock Festival" />
+              <div class="card-overlay">
+                <div class="event-date">Apr 12, 2025</div>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="event-category">Music</div>
+              <h3 class="event-title">Rock Festival</h3>
+              <p class="event-description">Experience electrifying performances by top rock bands at the annual festival.</p>
+              <div class="event-details">
+                <div class="detail-item"><span class="detail-icon">📍</span><span>Los Angeles, CA</span></div>
+                <div class="detail-item"><span class="detail-icon">👥</span><span>3000 attendees</span></div>
+                <div class="detail-item"><span class="detail-icon">💰</span><span>$120</span></div>
+              </div>
+              <button class="book-btn" onclick="bookEvent('Rock Festival', '$120')">
+                <span class="btn-text">Book Now</span>
+                <div class="btn-particles"></div>
+              </button>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="event-card" data-category="music">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1721133073235-e4b5facb27fa?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bXVzaWMlMjBldmVudHxlbnwwfHwwfHx8MA%3D%3D" alt="Classical Concert" />
+              <div class="card-overlay">
+                <div class="event-date">Apr 20, 2025</div>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="event-category">Music</div>
+              <h3 class="event-title">Classical Symphony </h3>
+              <p class="event-description">A night of classical music performed by a world-class orchestra.</p>
+              <div class="event-details">
+                <div class="detail-item"><span class="detail-icon">📍</span><span>Vienna, Austria</span></div>
+                <div class="detail-item"><span class="detail-icon">👥</span><span>1200 attendees</span></div>
+                <div class="detail-item"><span class="detail-icon">💰</span><span>$90</span></div>
+              </div>
+              <button class="book-btn" onclick="bookEvent('Classical Symphony Concert', '$90')">
+                <span class="btn-text">Book Now</span>
+                <div class="btn-particles"></div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education Events -->
+      <div class="category-section" data-category="education">
+        <h2 class="category-title">
+          <span class="title-icon">🎓</span>
+          <span class="title-text">Education Events</span>
+        </h2>
+        <div class="events-grid">
+          <!-- Card 1 -->
+          <div class="event-card" data-category="education">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1561089489-f13d5e730d72?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZWR1Y2F0aW9uYWwlMjBldmVudHxlbnwwfHwwfHx8MA%3D%3D" alt="STEM Workshop" />
+              <div class="card-overlay">
+                <div class="event-date">May 3, 2025</div>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="event-category">Education</div>
+              <h3 class="event-title">STEM Workshop for Youth</h3>
+              <p class="event-description">Hands-on STEM activities and learning for students ages 10-18.</p>
+              <div class="event-details">
+                <div class="detail-item"><span class="detail-icon">📍</span><span>San Jose, CA</span></div>
+                <div class="detail-item"><span class="detail-icon">👥</span><span>400 attendees</span></div>
+                <div class="detail-item"><span class="detail-icon">💰</span><span>$30</span></div>
+              </div>
+              <button class="book-btn" onclick="bookEvent('STEM Workshop for Youth', '$30')">
+                <span class="btn-text">Book Now</span>
+                <div class="btn-particles"></div>
+              </button>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="event-card" data-category="education">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1609660100545-05f3799a941b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZWR1Y2F0aW9uYWx8ZW58MHx8MHx8fDA%3D" alt="Language Seminar" />
+              <div class="card-overlay">
+                <div class="event-date">May 10, 2025</div>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="event-category">Education</div>
+              <h3 class="event-title">Language Learning Seminar</h3>
+              <p class="event-description">Boost your language skills with expert-led sessions and interactive practice.</p>
+              <div class="event-details">
+                <div class="detail-item"><span class="detail-icon">📍</span><span>London, UK</span></div>
+                <div class="detail-item"><span class="detail-icon">👥</span><span>250 attendees</span></div>
+                <div class="detail-item"><span class="detail-icon">💰</span><span>$50</span></div>
+              </div>
+              <button class="book-btn" onclick="bookEvent('Language Learning Seminar', '$50')">
+                <span class="btn-text">Book Now</span>
+                <div class="btn-particles"></div>
+              </button>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="event-card" data-category="education">
+            <div class="card-image">
+              <img src="https://images.unsplash.com/photo-1699347914988-c61ec13c99c5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZWR1Y2F0aW9uYWx8ZW58MHx8MHx8fDA%3D" alt="Career Fair" />
+              <div class="card-overlay">
+                <div class="event-date">May 18, 2025</div>
+              </div>
+            </div>
+            <div class="card-content">
+              <div class="event-category">Education</div>
+              <h3 class="event-title">Career Fair & Guidance Summit</h3>
+              <p class="event-description">Meet top employers and get career advice at the annual education career fair.</p>
+              <div class="event-details">
+                <div class="detail-item"><span class="detail-icon">📍</span><span>Chicago, IL</span></div>
+                <div class="detail-item"><span class="detail-icon">👥</span><span>600 attendees</span></div>
+                <div class="detail-item"><span class="detail-icon">💰</span><span>$20</span></div>
+              </div>
+              <button class="book-btn" onclick="bookEvent('Career Fair & Guidance', '$20')">
+                <span class="btn-text">Book Now</span>
+                <div class="btn-particles"></div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div> 
+  </section>
+
+  <!-- Booking Modal -->
+  <div id="bookingModal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <div class="modal-header">
+        <h2 id="modalEventTitle">Book Event</h2>
+        <div class="modal-price" id="modalEventPrice"></div>
+      </div>
+      <form class="booking-form" id="bookingForm">
+        <div class="form-group">
+          <input type="text" id="attendeeName" required>
+          <label for="attendeeName">Full Name</label>
+        </div>
+        <div class="form-group">
+          <input type="email" id="attendeeEmail" required>
+          <label for="attendeeEmail">Email Address</label>
+        </div>
+        <div class="form-group">
+          <input type="tel" id="attendeePhone" required>
+          <label for="attendeePhone">Phone Number</label>
+        </div>
+        <div class="form-group">
+          <select id="ticketQuantity" required>
+            <option value="">Select Quantity</option>
+            <option value="1">1 Ticket</option>
+            <option value="2">2 Tickets</option>
+            <option value="3">3 Tickets</option>
+            <option value="4">4 Tickets</option>
+            <option value="5">5+ Tickets</option>
+          </select>
+        </div>
+        <button type="submit" class="modal-book-btn">
+          <span>Complete Booking</span>
+          <div class="btn-ripple"></div>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script src="browse.js"></script>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <!-- Place this inside your .footer-content or .footer-brand -->
+<div class="footer-logo-row">
+  <img src="Screenshot_2025-06-06_115142-removebg-preview.png" alt="EventSphere Logo" class="footer-logo-img">
+  <div class="footer-logo-text">
+    EVENTSPHERE
+    
+  </div>
+</div>
+      <nav class="footer-nav">
+        <a href="test.html">Home</a>
+        <a href="#categories">Categories</a>
+        <a href="browse.html">Explore</a>
+        <a href="about.html">About</a>
+      </nav>
+      <p class="footer-copy">&copy; 2024 EventSphere. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
